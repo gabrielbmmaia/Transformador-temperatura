@@ -9,7 +9,9 @@ public class Principal {
         Scanner readinput = new Scanner(System.in);
         Transformador transformador = new Transformador();
 
-        System.out.println("Para qual tipo de temperatura deseja transformar ? 0 - Celsius / 1 - Fahrenheit.");
+
+
+        System.out.println("Deseja transformar para qual tipo de temperatura ? 0 - Celsius / 1 - Fahrenheit.");
         int a = readinput.nextInt();
         System.out.println("Digite a temperatura: ");
         float b = readinput.nextFloat();
@@ -22,6 +24,5 @@ public class Principal {
             float valorTransformado = transformador.transformaParaFahrenheit(b);
             System.out.println("A temperatura: " + b + " Cº em Fahrenheit fica: " + valorTransformado + " Fº.");
         }
-
     }
 }
